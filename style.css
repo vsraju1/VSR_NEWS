@@ -147,3 +147,7 @@ main{
 .news-source{
     margin-block: 12px;
 }
+
+.nav-links ul > li{
+    text-transform: capitalize;
+}

@@ -78,6 +78,11 @@ searchButton.addEventListener("click", () => {
 let ul = document.querySelector("ul");
 
 function addSearchItem() {
+  if (lastListItem) {
+    ul.removeChild(lastListItem)
+    // lastListItem.classList.remove("active");
+    lastListItem = null;
+  }
   let li = document.createElement("li");
   li.innerHTML = searchInput.value;
   li.classList.add('hover-link')
