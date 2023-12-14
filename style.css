@@ -151,3 +151,33 @@ main{
 .nav-links ul > li{
     text-transform: capitalize;
 }
+
+@media(max-width:426px){
+    .container{
+        max-width: 90vw;
+    }
+    .company-logo{
+        font-size: 2rem;
+        color: #2294ed;
+    }
+    .nav-links ul > li{
+        display: none;
+    }
+    .nav-item.active{
+        display: unset;
+        margin: 0 12px;
+    }
+    .news-input{
+        width: 22vw;
+    }
+    .search-button {
+        width: 15vw;
+        font-size: 0.8rem;
+        padding: 8px 0;
+        cursor: pointer;
+    }
+    .card{
+        width: 90vw;
+    }
+    
+}
